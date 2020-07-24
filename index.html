@@ -1,0 +1,75 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enquiry Form</title>
+    <style type="text/css">
+        form{
+            padding-top: 120px;
+            text-align: center;
+            font-size: 30px;
+            background-color:darkorange;
+            padding-bottom: 120px;
+        }
+        input{
+            font-size: 30px;
+            width: 250px;
+            height: 40px;
+        }
+        label{
+            display: inline-flex;
+            margin-bottom: 5px;
+            } 
+            .nav ul{
+            margin: 0;
+            }
+        .nav li{
+                display: inline;
+                padding: 0 5%;
+            }
+        .nav a{
+                display: inline-block;
+                padding: .5em;
+                color: whitesmoke;
+                text-decoration: none;
+            }
+        .nav{
+                text-align: center;
+                font-size: 1.1em;
+                font-weight: lighter;
+                border-bottom: 1px solid black;
+                background-color:blue;
+            }
+        .nav a:hover{
+                background-color: black;
+            }                       
+    </style>
+</head>
+<body>
+    <nav class="nav main-nav">
+        <ul>
+           <li><a href="index.html">ENQUIRY SUMBIT</a></li>
+           <li><a href="check.html">ENQUIRY CHECK</a></li>
+           <li><a href="admin.html">ADMIN</a></li>
+       </ul>
+   </nav>
+
+    <form action="connecting.php" method="POST">
+          <label> NAME : </label>
+           <input type="text" name="name1" id="" required>
+           <br>
+           <br>
+           <label for=""> EMAIL : </label>
+            <input type="email" name="email" id="" required>
+            <br>
+
+            <br>
+            <label for="">ENQUIRY : </label>
+            <textarea name="query" cols="30" rows="10" style="font-size: medium; font-family: 'Times New Roman', Times, serif;"></textarea>
+            <br>
+            <br>
+            <hr>
+            <input type="submit" value="Sumbit" name="submit">
+    </form>
+</body>
+</html>
